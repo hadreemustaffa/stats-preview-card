@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component-using-flexbox-fqal0BrOtO)
+- Live Site URL: [Github Pages](https://hadreemustaffa.github.io/stats-preview-card/)
 
 ## My process
 
@@ -36,6 +36,10 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
+
+- Common breakpoints for media-queries
+- Fluid typography
+- How to improve workflow with responsiveness in mind
 
 ### Continued development
 
