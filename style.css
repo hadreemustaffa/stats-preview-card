@@ -16,6 +16,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 h1,
@@ -69,7 +70,6 @@ main {
 	display: flex;
 	flex-direction: row;
 	border-radius: 10px;
-	overflow: hidden;
 }
 
 #text-container {
@@ -137,15 +137,20 @@ main {
 @media (max-width: 599px) {
 	main {
 		width: 90vw;
-		min-height: fit-content;
+		min-width: 361px;
+		max-width: 338px;
+		height: fit-content;
 		text-align: center;
 		flex-direction: column-reverse;
 	}
 	#img-container {
-		flex-basis: 30%;
+		flex-basis: 35%;
+	}
+	img {
+		object-fit: cover;
 	}
 	#text-container {
-		flex-basis: 70%;
+		flex-basis: 65%;
 		padding: 7.5% 10.75%;
 	}
 	#stats-container {
@@ -153,24 +158,20 @@ main {
 		align-items: center;
 		flex-direction: column;
 		padding-right: 0;
-		padding-top: 13%;
+		padding-top: 5%;
 	}
 
 	h1 {
-		font-size: 1.5rem;
-		font-size: clamp(1.5rem, 0.21rem + 6.45vw, 2.625rem);
+		font-size: 1.7rem;
 	}
 	h2 {
 		font-size: 1.35rem;
-		font-size: clamp(1.35rem, 0.6rem + 3.7vw, 2rem);
 	}
 	p {
 		font-size: 0.937rem;
-		font-size: clamp(0.937rem, 0.3rem + 3.23vw, 1.5rem);
 	}
 	.smaller-text {
 		font-size: 0.75rem;
-		font-size: clamp(0.75rem, 0.23rem + 2.6vw, 1.2rem);
 	}
 }
 
