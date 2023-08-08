@@ -16,18 +16,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow: hidden;
+}
+
+img {
+	width: 100%;
+	height: 100%;
 }
 
 h1,
 h2,
 p {
 	font-family: var(--inter);
-}
-
-p,
-.smaller-text {
-	font-weight: 400;
 }
 
 /* first font-size is Fallback*/
@@ -54,6 +53,11 @@ p {
 	color: var(--stat-headings-slightly-transparent);
 }
 
+p,
+.smaller-text {
+	font-weight: 400;
+}
+
 body {
 	background-color: var(--main-bg-very-dark-blue);
 	height: 100vh;
@@ -70,6 +74,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	border-radius: 10px;
+	overflow: hidden;
 }
 
 #text-container {
@@ -106,10 +111,6 @@ main {
 	position: relative;
 	flex-basis: 50%;
 }
-#img-container > img {
-	width: 100%;
-	height: 100%;
-}
 #accent {
 	position: absolute;
 	width: 100%;
@@ -137,9 +138,7 @@ main {
 @media (max-width: 599px) {
 	main {
 		width: 90vw;
-		min-width: 361px;
-		max-width: 338px;
-		height: fit-content;
+		height: 80vh;
 		text-align: center;
 		flex-direction: column-reverse;
 	}
@@ -151,7 +150,7 @@ main {
 	}
 	#text-container {
 		flex-basis: 65%;
-		padding: 7.5% 10.75%;
+		padding: 10.5% 10.75%;
 	}
 	#stats-container {
 		gap: 20px;
